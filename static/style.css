@@ -1,0 +1,297 @@
+html, body {  
+	width: 100%; 
+	margin: 0; 
+}
+
+body {
+  background-color: black;
+	font-family: "SF Pro Display";
+	overflow-x: hidden;
+}
+p{
+	font-family: "SF Pro Display";
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+button { 
+	outline: none; 
+	background-color: black;
+  border: none;
+	padding: 0px;
+}
+button:focus {outline:none;}
+input:focus {outline:none;}
+
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+  left: 0;
+  top: 0;
+	z-index: 1000;
+	//background-color: black;
+}
+
+.Logo{
+	margin-top: 50px;
+	width: 32px;
+}
+
+.search_div{
+	width: 100%;
+	height: 62px;
+	position: fixed;
+	left: 0;
+	top: 100px;
+	z-index: 1001;
+	background-color: black;
+}
+.search_contents{
+	display: block;
+}
+.search_bar{
+	background-color: #262626;
+	text-indent: 34px !important;
+	width: 70%;
+	height: 36px;
+	border-radius: 9px;
+	border: 0px;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 13px;
+	color: white;
+}
+.search_icon{
+	position: fixed;
+	left: 33px;
+	top: 125px;
+	z-index: 1001;
+}
+
+.cancelar{
+	color: white;
+	margin-left: 13px;
+}
+
+.results{
+	margin-top: 172px;
+	width: 100%;
+}
+
+.search_result{
+	margin-left: 18px;
+	margin-bottom: 28px;
+	display: flex;
+}
+
+.search_result_profile_pic{
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+	object-fit: cover;
+}
+
+.search_result_username{
+	color: white;
+	font-size: 16px;
+}
+
+.search_result_img_container{
+	width: auto;
+	margin-right: 0px;
+}
+.search_result_text_container{
+	width: auto;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.navbar{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+  left: 0;
+  bottom: 0;
+	z-index: 1000;
+	border-top: 1px solid #BD00FF;
+	background-color: black;
+}
+
+.navbar_button{
+	width: 24.2%;
+	height: 80%;
+}
+
+.navbar_icon{
+
+}
+
+.main{
+	width: 100%;
+}
+
+.profile_picture{
+	margin-top: 35%;
+	border: 4px solid #BD00FF;
+	border-radius: 110px;
+	object-fit: cover;
+	width: 27vh;
+	height: 27vh;
+}
+.me_username{
+	font-size: 40px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #BD00FF;
+}
+
+.login{
+	padding-top: 250px;
+}
+.buttons{
+	width: 52%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.log{
+	width: 259px;
+	height: 41px;
+	background-color: #C4C4C4;
+	border-radius: 5px;
+	border: 0px;
+	text-indent:15px!important;
+	font-size: 22px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.usr_txt{
+	margin-top: 0px;
+}
+.pas_txt{ 
+  margin-top: 29px;
+  margin-bottom: 35px;
+}
+.log_btn{
+	font-size: 22px;
+	color: #C4C4C4;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+}
+.log_btn:hover {
+	cursor: pointer;
+	color:#BD00FF;
+}
+.signin_btn{
+	float:right;
+}
+.signout_btn{
+}
+.signout_btn:hover {
+	cursor: pointer;
+}
+
+
+.loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1010;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+.loading_part{
+	animation-name: ckw;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	left: calc(50% - 47px);
+  top: calc(50% - 50.5px);
+}
+@keyframes ckw {
+	0% {
+			transform: rotate(0deg);
+	}
+	100% {
+			transform: rotate(360deg);
+	}
+}
+
+.pp_medium {
+	width: 15vh !important;
+	height: 15vh !important;
+	border: 2px solid #BD00FF;
+}
+
+.mu_medium {
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: 600;
+}
+
+.mbc_medium {
+	width: 14vh;
+}
+
+.subtilte {
+    color: white;
+    font-size: 20px;
+    margin-left:  17px;
+    margin-top: 30px;
+}
+
+.long_button {
+    color: white;
+    width: 344px;
+    height: 56px;
+    background-color: #1A1A1A;
+    border: 1px solid #242424;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    display: flex;
+}
+
+.long_button_text {
+    font-size: 20px;
+}
+
+.lb_icon_container {
+    width: auto;
+    margin-left: 16px;
+    margin-top: 13px;
+}
+
+.lb_text_container {
+    margin-left: 20px;
+    margin-top: 16.5px;
+}
+
+.s_icon{
+	width: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
